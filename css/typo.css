@@ -1,0 +1,26 @@
+@font-face { font-family: Krona; src: url('../fonts/KronaOne-Regular.ttf'); } 
+
+
+.title--big {
+    font-family: Krona, sans-serif;
+    color: #F96F12;
+    font-size: 60px;
+    letter-spacing: 0.03em;
+}
+
+.title--medium {
+    font-family: "Krona One";
+    font-size: 50px;
+    text-align: left;
+    color: #f96f12;
+}
+
+.paragraph--default {
+    font-family: Coolvetica;
+    font-weight: 300;
+    font-size: 25px;
+    letter-spacing: 0.03em;
+    line-height: 32px;
+    text-align: left;
+    color: #f96f12;
+}
