@@ -1,3 +1,13 @@
-.container--mrg--big {
-    margin: 136px;
+.about {
+    position: relative;
+}
+
+.about .container {
+    margin-top: 10vw;
+}
+
+@media only screen and (min-width: 1200px) {
+    .about .container {
+        margin-top: 5vw;
+    }
 }
