@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="css/typo.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/simple-grid.css">
   <link rel="stylesheet" href="https://use.typekit.net/ycx5ovy.css"> <!-- Coolvetica -->
 
 
@@ -19,9 +20,34 @@
 </head>
 
 <body class="about">
-
-<div class="container--mrg--big">
+<div class="patterns">
+  <svg class="patterns__circle--donnut" xmlns="http://www.w3.org/2000/svg" width="628.8" height="628.801" viewBox="0 0 628.8 628.801">
+    <path id="circle--donnut" d="M-283.254,6821.4C-124.571,6751.011-53,6565.31-123.391,6406.627s-256.095-230.257-414.777-159.864-230.255,256.095-159.863,414.777S-441.936,6891.8-283.254,6821.4ZM-474.44,6390.423a157.158,157.158,0,0,1,207.389,79.932,157.158,157.158,0,0,1-79.93,207.387,157.16,157.16,0,0,1-207.389-79.93A157.161,157.161,0,0,1-474.44,6390.423Z" transform="translate(725.111 -6219.683)" fill="#fff" opacity="0.623"/>
+  </svg>
+  <svg class="patterns__square--donnut" xmlns="http://www.w3.org/2000/svg" width="786.236" height="786.236" viewBox="0 0 786.236 786.236">
+    <path id="square--donnut" d="M-500.812,6771.3l-309.694,476.54,476.54,309.7L-24.27,7081Zm6,512.253a142.083,142.083,0,0,1-41.711-196.56,142.085,142.085,0,0,1,196.559-41.709,142.081,142.081,0,0,1,41.711,196.558A142.08,142.08,0,0,1-494.812,7283.554Z" transform="translate(810.506 -6771.301)" fill="#fff" opacity="0.623"/>
+  </svg>  
+</div>
+<div class="container">
     <h1 class="title--big">À PROPOS</h1>
+    <div class="row">
+      <div class="col-5">
+        <img class="svg--fit" src="images/illus--clem.svg" alt="">
+      </div>
+      <div class="col-7">
+        <h2 class="title--medium">Clémentine Combret</h2>
+        <h3 class="title--small">La créatrice du studio</h3>
+        <p class="paragraph--default">Garantie sans pépins, la Clémentine souvent renommée à tord Mandarine est comme un zeste de soleil en hiver. Sans arômes artificiels, ni conservateurs, elle sait être douce, sucrée mais peut se montrer acidulée. Divisée en plusieurs quartiers, elle pourra vous montrer ses différentes personnalités.
+        </p>
+        <p class="paragraph--default">Enfin, associée à certaines épices, elle ne manquera pas de tempérament et vous réservera bien des surprises.</p>
+        <a class="btn--circle-chevron" href="index.html">
+          <span class="btn--circle-chevron__circle"></span>
+          <svg class="btn--circle-chevron__chevron" xmlns="http://www.w3.org/2000/svg" width="35.124" height="29.669" viewBox="0 0 35.124 29.669">
+            <path id="chevron" d="M-13.6-10.27,3.883-21.82-13.6-33.426l3.813-5.984L16.073-21.848-9.783-4.286Z" transform="translate(39.41 16.073) rotate(-90)" fill="#02aa99"/>
+          </svg>
+        </a>
+      </div>
+    </div>
 </div>
 
   <script src="js/scripts.js"></script>
