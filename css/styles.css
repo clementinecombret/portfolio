@@ -4,9 +4,53 @@
 }
 
 body {
-    background-color: #F9F5EF;
+    background-color: red;
+/*cursor: FUCK THIS*/
 }
 
+header {
+    background-color: #F9F5EF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+}
+
+.header__link-images {
+    padding: 8px;
+}
+
+.header__link-images__clementine {
+    height: 32px;
+    width: auto;
+
+}
+
+.header__nav ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+.header__nav li {
+    list-style: none;
+}
+
+.header__nav__link {
+    display: flex;
+    padding: 8px;
+}
+
+.header__nav__link__svg {
+    width: 24px;
+    height: auto;
+}
+
+.header__nav__link__text {
+    display: none;
+}
 
 /******** BTNS ********/
 .btn--circle-chevron {
