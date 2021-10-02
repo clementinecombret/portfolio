@@ -4,9 +4,9 @@
 }
 
 body {
-    background-color: red;
-/*cursor: FUCK THIS*/
-}
+    background-color:#F9F5EF;
+    cursor: crosshair;}
+
 
 header {
     background-color: #F9F5EF;
@@ -26,6 +26,7 @@ header {
     width: auto;
 
 }
+
 
 .header__nav ul {
     display: flex;
@@ -83,6 +84,204 @@ header {
     40% {transform: translateY(-20px);} 
     60% {transform: translateY(-10px);} 
  } 
+
+ .landing {
+     width: 100%;
+
+ }
+
+ .block1 {
+    width: 100%;
+    max-width: 50%;
+}
+
+.block2 {
+    width: 100%;
+    max-width: 100%;
+}
+
+ /******** LOGOS ********/
+.logo {
+    top: 71px;
+left: 75px;
+width: 173px;
+height: 123px;
+padding-top: 90px;
+padding-left: 75px;
+}
+
+ /******** ILLUSTRATIONS ********/
+.hero-illustrations
+{
+    width: 100%;
+    height: 100vh;
+    background-color: #FFFAEE;
+
+}
+
+.hero-illustrations-center
+{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.hero-illustrations-center > img
+{
+    max-width: 50%;
+    margin: 0 auto;
+    display: block;
+    padding-top: 50px;
+}
+
+.hero-illustrations-left
+{
+    height: 25%;
+    width: 25%;
+    margin-left: 80px;
+
+}
+
+.hero-illustrations-left > img
+{
+    position: relative;
+    max-width: 35%;
+    margin-top: 50px;
+}
+
+.hero-illustrations-right
+{
+    position: absolute;
+    height: 20%;
+    width: 25vw;
+    bottom: 50px;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.hero-illustrations-right > img
+{
+    display: block;
+    max-width: 40px;
+    padding-bottom: 15px;
+    padding-right: 5vw;
+}
+
+.illustrations2
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.illustration2_left
+{
+    position: relative;
+    margin-left: auto;
+    height: 50%;
+    width: 50%;
+}
+
+.illustration2_left > img
+{
+    position: relative;
+    max-width: 100%;
+    display: block;
+}
+
+.illustration2_right
+{
+    position: relative;
+    margin-left: auto;
+    display: block;
+    height: 50%;
+    width: 50%;
+}
+
+.illustration2_right > img
+{
+    position: relative;
+    max-width: 100%;
+    display: block;
+}
+
+.illustrations3
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.illustration3_left
+{
+    position: relative;
+    margin-left: auto;
+    height: 34%;
+    width: 34%;
+}
+
+.illustration3_left > img
+{
+    position: relative;
+    max-width: 100%;
+    display: block;
+}
+
+.illustration3_milieu
+{
+    position: relative;
+    margin-left: auto;
+    display: block;
+    height: 34%;
+    width: 34%;
+}
+
+.illustration3_milieu > img
+{
+    position: relative;
+    max-width: 100%;
+    display: block;
+ 
+}
+
+.illustration3_right
+{
+    position: relative;
+    margin-left: auto;
+    display: block;
+    height: 34%;
+    width: 34%;
+}
+
+.illustration3_right > img
+{
+    position: relative;
+    max-width: 100%;
+    display: block;
+}
+
+
+.motion
+{
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
+.motion > video
+{
+    position: relative;
+    margin-left: auto;
+    display: block;
+    height: 100%;
+    width: 100%;
+}
 
  /******** PATTERNS ********/
  .patterns svg {
