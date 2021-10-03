@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>icone--cursor--square</title>
+    <g id="icone--cursor--square" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" fill="#F96F12" fill-rule="nonzero" transform="translate(15.500000, 22.500000) scale(-1, 1) translate(-15.500000, -22.500000) " cx="15.5" cy="22.5" r="9.5"></circle>
+        <path d="M11.484456,4.74878592 C9.12577009,8.5988882 4.54716537,10.6242261 0,9.82891528 C0.245683048,6.99231815 1.64493794,4.36669222 3.88956801,2.53035182 C6.13419819,0.694011423 9.04008504,-0.202415464 11.9671848,0.0385160824 C12.3139827,0.0605871867 12.6589625,0.104189577 13,0.169054738 C12.8560272,1.7865204 12.3380344,3.35181178 11.484456,4.74878592 Z" id="Path" fill="#02AA99" fill-rule="nonzero" transform="translate(6.500000, 5.000000) scale(-1, 1) translate(-6.500000, -5.000000) "></path>
+    </g>
+</svg>
