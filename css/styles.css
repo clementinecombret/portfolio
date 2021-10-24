@@ -25,9 +25,21 @@ body {
     width: 100%;
 }
 
+.header .header__link-images {
+    text-decoration: none;
+}
+
 .header .header__link-images__clementine {
     height: 32px;
     width: auto;
+    transition: all .3s ease;
+}
+
+.header .header__link-images__logo {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    transition: all .3s ease;
 }
 
 .header__nav ul {
@@ -57,16 +69,26 @@ body {
 }
 
 .header__nav__link {
-    display: block;
+    display: flex;
+    text-decoration: none;
+    width: 24px;
+    height: 24px; 
 }
 
 .header__nav__link__svg {
     width: 24px;
+    min-width: 24px;
     height: auto;
 }
 
 .header__nav__link__text {
-    display: none;
+    transition: all .3s ease;
+    opacity: 0;    
+    width: 0;
+    color: #F96F12;
+    font-family: "Krona";
+    font-size: 14px;
+
 }
 
 @media (min-width: 720px) {
@@ -76,12 +98,19 @@ body {
         overflow: hidden;
     }
     .header--vertical {
-        width: 10vw;
+        position: absolute;
+        top: 0; bottom: 0; left: 0;
+        width: auto;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items:flex-start;
         flex-direction: column;
-        padding: 32px 0;
+        padding: 32px 32px 32px 32px;
+        z-index: 5;
+        transition: all .3s ease;
+    }
+    .header--vertical .header__link-images__clementine {
+        height: 48px;
     }
     .header--vertical .header__nav ul {
         flex-direction: column;
@@ -93,20 +122,45 @@ body {
     .header--vertical .header__nav li:last-of-type {
         margin-bottom: 0;
     }
+    .header--vertical .header__nav__link {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .header--vertical:hover {
+        transition: all .3s ease;
+    }
+    .header--vertical:hover .header__link-images__logo {
+        transition: all .3s ease;
+        width: 100px;
+        height: auto;
+        opacity: 1;
+    }
+    .header--vertical:hover .header__link-images__clementine {
+        width: 0;
+        height: 0;
+        opacity: 0;
+        transition: all .3s ease;
+    }
+    .header--vertical:hover .header__nav__link__text{
+        transition: all .3s ease ;
+        opacity: 1;
+        text-decoration: none;
+        margin-left: 8px;
+        width: 100%;
+    }
+    .header--vertical:hover .header__nav__link__text:hover{
+        color: red;
+    }
     .homepage .illustrations2 {
-        width: 90vw;
+        width: calc(100vw - 96px);
+        margin-left: 96px;
     }
 }
 
 @media (min-width: 960px) {
-    .header--vertical {
-        width: 5vw;
-    }
-    .homepage .illustrations2 {
-        width: 95vw;
-    }
-}
 
+}
 
 /******** BTNS ********/
 .btn--circle-chevron {
@@ -244,7 +298,17 @@ padding-left: 75px;
     z-index: 2;
     transform: translateX(-50%) translateY(-50%);
     margin: 0;
-    font-size: 80px;
+    font-family: "Krona";
+    text-transform: uppercase;
+    font-size: 7.5vw;
+    text-shadow: 2px 2px 16px rgba(0,0,0,0.75);
+}
+.illustrations2 a h1 {
+    color: white;
+}
+
+.illustrations2 a h2 {
+    color: #F96F12;
 }
 
 .illustration2_left, .illustration2_right 
@@ -260,6 +324,11 @@ padding-left: 75px;
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
+    display: block;
+    min-height: 100vh;
+    height: auto;
+    min-width: 100vw;
+    width: auto;
 }
 
 @media (min-width: 720px) {
@@ -273,11 +342,17 @@ padding-left: 75px;
     }
     .illustrations2 a h1, .illustrations2 a h2 {
         top: auto;
-        bottom: 10vh;
-        transform: translateX(-50%);
+        bottom: 16vh;
+        transform: translateX(-50%) translateY(50%);
+        font-size: 3.5vw;
+        text-shadow: none;
     }
     .illustration2_left img, .illustration2_right img {
         transition: all .3s ease;
+        min-height: 100vh;
+        height: auto;
+        min-width: 50vw;
+        width: auto;
     }
     
     .illustration2_left:hover img, .illustration2_right:hover img {
@@ -286,7 +361,7 @@ padding-left: 75px;
     }
 
     .illustration2_left:hover h1, .illustration2_right:hover h2 {
-        font-size: 100px;
+        font-size: 4vw;
         transition: all .3s ease;
     }
 }
