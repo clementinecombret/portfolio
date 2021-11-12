@@ -8,11 +8,14 @@
   <meta name="description" content="The HTML5 Herald">
   <meta name="author" content="SitePoint">
 
+  <link rel="icon" href="images/icone--clementine.svg" alt="clementine_combret">
+
   <link rel="stylesheet" href="css/layout.css">
   <link rel="stylesheet" href="css/typo.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/simple-grid.css">
+  <link rel="stylesheet" href="css/grid.css">
   <link rel="stylesheet" href="https://use.typekit.net/ycx5ovy.css"> <!-- Coolvetica -->
 
 
@@ -20,8 +23,98 @@
 </head>
 
 <body>
-<h1>YO les gadjis !</h1>
+  <header class="header header--horizontal header--horizontal--l">
+    <a href="index.html" class="header__link-images">
+      <img class="header__link-images__clementine" src="images/icone--clementine.png" alt="">
+      <img class="header__link-images__logo" src="images/logo--studio.png" alt="">
+    </a>
+    
+    <nav class="header__nav">
+      <ul>
+        <li>
+          <a class="header__nav__link" href="index.html">
+            <svg id="Calque_5" data-name="Calque 5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 759.5"><defs><style>.cls-6{fill:none;stroke:#f96f12;stroke-linecap:round;stroke-linejoin:round;stroke-width:55px;}</style></defs><path class="cls-6" d="M60.12,399.81,449.29,41.55,848.92,399.3H739V719.71H533.06V490.05H372.5V720.41H173.56V399.94S81.56,399.81,60.12,399.81Z"/></svg>
+            <span class="header__nav__link__text">accueil</span>
+          </a>
+        </li>
+        <li>
+          <a class="header__nav__link" href="mailto:clementine.combret.lisaa@gmail.com">
+            <svg class="header__nav__link__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 389.07 282.96"><defs><style>.cls-1,.cls-2,.cls-3{fill:none;}.cls-2,.cls-3{stroke:#f96f12;stroke-linecap:round;stroke-width:24px;}.cls-3{stroke-linejoin:round;}</style></defs><g id="Calque_2" data-name="Calque 2"><g id="Calque_1-2" data-name="Calque 1"><g id="Groupe_46" data-name="Groupe 46"><g id="Rectangle_14" data-name="Rectangle 14"><rect class="cls-1" width="389.07" height="282.96" rx="58.95"/><rect class="cls-2" x="14.74" y="14.74" width="359.59" height="253.48" rx="44.21"/></g><path id="Tracé_29" data-name="Tracé 29" class="cls-3" d="M36.75,34,196.16,164.09,349.94,39.43,356.61,34"/></g></g></g></svg>
+            <span class="header__nav__link__text">contact</span>
+          </a>
+        </li>
+        <li>
+          <a class="header__nav__link" href="about.html">
+            <svg class="header__nav__link__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 392.49 339.07"><defs><style>.cls-4{fill:none;stroke:#f96f12;stroke-linecap:round;stroke-linejoin:round;stroke-width:24px;}.cls-5{fill:#f96f12;}</style></defs><g id="Calque_4" data-name="Calque 4"><g id="Calque_4-2" data-name="Calque 4"><g id="Groupe_25" data-name="Groupe 25"><path id="Tracé_28" data-name="Tracé 28" class="cls-4" d="M371.17,325.85s-62.08,12.07-91-39.62a182.93,182.93,0,0,1-83.91,15.92C94.49,302.15,12,237.23,12,157.09S94.49,12,196.24,12,380.49,76.92,380.49,157.09a128.63,128.63,0,0,1-45.9,95.78C329.93,288.7,371.17,325.85,371.17,325.85Z"/><circle id="Ellipse_46" data-name="Ellipse 46" class="cls-5" cx="125.98" cy="156.06" r="24.5"/><circle id="Ellipse_47" data-name="Ellipse 47" class="cls-5" cx="199.48" cy="156.06" r="24.5"/><circle id="Ellipse_48" data-name="Ellipse 48" class="cls-5" cx="272.98" cy="156.06" r="24.5"/></g></g></g></svg>
+            <span class="header__nav__link__text">à propos</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="grid-container">
+    <div class="grid-item grid-item--1">
+      <a class="grid-item__link" href="#">
+        <img class="grid-item__link__img" src="https://image.shutterstock.com/image-photo/portrait-surprised-cat-scottish-straight-260nw-499196506.jpg" alt="">
+      </a>
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item grid-item--3">
+      <a class="grid-item__link" href="#">
+        <img class="grid-item__link__img" src="https://image.shutterstock.com/image-photo/portrait-surprised-cat-scottish-straight-260nw-499196506.jpg" alt="">
+      </a>
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item grid-item--10">
+      <a class="grid-item__link" href="#">
+        <img class="grid-item__link__img" src="https://image.shutterstock.com/image-photo/portrait-surprised-cat-scottish-straight-260nw-499196506.jpg" alt="">
+      </a>    </div>
+    <div class="grid-item grid-item--11">
+      <a class="grid-item__link" href="#">
+        <img class="grid-item__link__img" src="https://image.shutterstock.com/image-photo/portrait-surprised-cat-scottish-straight-260nw-499196506.jpg" alt="">
+      </a>    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item grid-item--18">
+      <a class="grid-item__link" href="#">
+        <img class="grid-item__link__img" src="https://image.shutterstock.com/image-photo/portrait-surprised-cat-scottish-straight-260nw-499196506.jpg" alt="">
+      </a>    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item grid-item--23">
+      <a class="grid-item__link" href="#">
+        <img class="grid-item__link__img" src="https://image.shutterstock.com/image-photo/portrait-surprised-cat-scottish-straight-260nw-499196506.jpg" alt="">
+      </a>    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item grid-item--32">
 
-  <script src="js/scripts.js"></script>
+    </div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+    <div class="grid-item"></div>
+  </div>
 </body>
 </html>
