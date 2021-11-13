@@ -68,6 +68,10 @@ body {
     padding-inline-start: 0;
 }
 
+.header--horizontal .header__nav__link__text {
+    display: none;
+}
+
 .header__nav__link {
     display: flex;
     text-decoration: none;
@@ -179,7 +183,7 @@ body {
         display: none;
     }
     .header--horizontal .header__nav li {
-        margin-right: 32px;
+        margin-right: 40px;
     }
     .header--horizontal .header__nav__link{
         width: 100%;
@@ -190,14 +194,16 @@ body {
         text-decoration: none;
         width: 100%;
         margin-left: 0;
+        font-size: 16px;
+        display: block;
     }
 }
 
 @media (min-width: 960px) {
-    .header--horizontal {
+    /* .header--horizontal {
         padding: 100px 140px;
         width: calc(100% - 280px);
-    }
+    } */
 }
 
 /******** BTNS ********/
