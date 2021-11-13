@@ -4,7 +4,7 @@ body {
   }
   .grid-container {
     display:grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
+    grid-template-columns: calc(20% - 1.6px) calc(20% - 1.6px) calc(20% - 1.6px) calc(20% - 1.6px) calc(20% - 1.6px);
     grid-gap: 2px;
     background-color:#F2C2D8;
   }
@@ -19,10 +19,36 @@ body {
   .grid-item__link {
       display: flex;
       width: 100%;
+      position: relative;
   }
   .grid-item__link__img {
     object-fit:cover;
-    width:100%;
+    min-width: 100%;
+    min-height: 100%;
+    width:auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all .3s ease;
+    position: absolute;
+    top:50%; left:50%;
+  }
+
+  .grid-item__link__img--effect {
+    object-fit:cover;
+    min-width: 100%;
+    min-height: 100%;
+    width:auto;
+    height: auto;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all .3s ease;
+    position: absolute;
+    top:50%; left:50%;
+    filter: grayscale(1);
+    z-index: 2;
+  }
+
+  .grid-item__link:hover .grid-item__link__img--effect {
+    opacity: 0;
     transition: all .3s ease;
   }
 
@@ -36,8 +62,6 @@ body {
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 4;
-    position: relative;
-    filter: invert(66%) sepia(66%) saturate(6416%) hue-rotate(163deg) brightness(97%) contrast(102%);
   }
   
   .grid-item--3 {
@@ -52,7 +76,7 @@ body {
     grid-column-end: 6;  
     grid-row-start: 4;
     grid-row-end: 5;
-    max-height: 20vh;
+    max-height: 12vh;
   }
   
   .grid-item--11 {
@@ -68,18 +92,125 @@ body {
     grid-row-start: 7;
     grid-row-end: 9;
   }
-  
   .grid-item--23 {
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 9;
     grid-row-end: 10;
-    max-height: 20vh;
+    max-height: 12vh;
   }
   
   .grid-item--32 {
-    grid-column-start: 2;
-    grid-column-end: 5;
+    grid-column-start: 1;
+    grid-column-end: 6;
     grid-row-start: 11;
-    grid-row-end: 13;
+    grid-row-end: 15;
+    background-color: #F2C2D8ED;
+    padding: 2vw;
   }
+
+  .grid-item--32__list {
+    list-style-type: none;
+    text-align: center;
+    padding:10vw 0;
+    margin: 0;
+    width: 100%;
+    border: 2px dashed #F9F5EF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .grid-item--32__list__social {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .grid-item--32__list__email {
+    font-size: 4.5vw;
+    font-family: "Krona", sans-serif;
+    margin-bottom: 7vw;
+  }
+
+  .grid-item--32__list__email__link {
+    color: #f96f12;
+    transition: .3s all ease;
+  }
+
+  .grid-item--32__list__email__link:hover {
+    opacity: .5;
+    transition: .3s all ease;
+  }
+
+  .grid-item--32__list__text {
+    margin-bottom: 3vw;
+    font-size: 4.5vw;
+    font-family: "Coolvetica";
+    font-weight: 400;
+    color: #F9F5EF;
+  }
+
+  .grid-item--32__list__social__link {
+    display: block;
+  }
+  .grid-item--32__list__social__link:hover .cls-6 {
+    stroke:#F9F5EF;
+    transition: .3s ease all;
+  }
+
+  .grid-item--32__list__social svg {
+    width: 8vw;
+    height: auto;
+  }
+  .grid-item--32__list__social__behance, .grid-item--32__list__social__insta {
+    margin-right: 4vw;
+  }
+
+  .grid-item--31, .grid-item--33, .grid-item--34, .grid-item--35, .grid-item--36, .grid-item--37, .grid-item--38, .grid-item--39, .grid-item--40 {
+    display: none;
+  }
+
+  @media (min-width: 720px) {
+    .grid-item--10, .grid-item--23 {
+      max-height: 20vh;
+    }
+    .grid-item--31, .grid-item--33, .grid-item--34, .grid-item--35, .grid-item--36, .grid-item--37, .grid-item--38, .grid-item--39, .grid-item--40 {
+      display: block;
+    }
+    .grid-item--32 {
+      grid-column-start: 2;
+      grid-column-end: 5;
+      grid-row-start: 11;
+      grid-row-end: 13;
+      padding: 2vw;
+    }
+    .grid-item--32__list {
+      padding:0;
+    }
+    .grid-item--32__list__email {
+      font-size: 2.5vw;
+      margin-bottom: 4vw;
+    }
+    .grid-item--32__list__text {
+      margin-bottom: 2vw;
+      font-size: 2.5vw;
+    }
+    .grid-item--32__list__social svg {
+      width: 4vw;
+    }
+    .grid-item--32__list__social__behance, .grid-item--32__list__social__insta {
+      margin-right: 2vw;
+    }
+  }
+
+
+
+
+
+
+
