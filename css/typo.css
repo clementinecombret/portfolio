@@ -4,7 +4,7 @@
 - Voir s'il n'y a pas un moyen d'améliorer le rendu d'espacement entre les lettre (delta entre les maquettes et le dev)
 */
 .title--big {
-    font-family: Krona, sans-serif;
+    font-family: "Krona", sans-serif;
     color: #F96F12;
     font-size: 60px;
     letter-spacing: 0.03em;
@@ -22,7 +22,7 @@
 }
 
 .title--small {
-    font-family: Coolvetica;
+    font-family: "Coolvetica";
     font-weight: bold;
     font-size: 35px;
     letter-spacing: 0.1em;
@@ -44,7 +44,7 @@
 }
 
 .paragraph--default {
-    font-family: Coolvetica;
+    font-family: "Coolvetica";
     font-weight: 300;
     font-size: 25px;
     letter-spacing: 0.03em;
