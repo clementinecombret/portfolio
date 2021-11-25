@@ -1,6 +1,15 @@
+/***** TO DO 
+- regarder pourquoi la home scroll horizontalement en mobile
+- faire les animations hover des liens de menu
+- faire état de la souris au hover
+*****/
 * {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -14,6 +23,9 @@ body {
     flex-wrap: wrap;
 }
 
+.flex {
+    display: flex;
+}
 /******** HEADER ********/
 .header {
     background-color: #F9F5EF;
@@ -172,9 +184,12 @@ body {
     }
     .header--horizontal .header__link-images__logo {
         transition: all .3s ease;
-        width: 100px;
+        width: 70px;
         height: auto;
         opacity: 1;
+    }
+    .header--horizontal--l .header__link-images__logo {
+        width: 100px;
     }
     .header--horizontal .header__link-images__clementine {
         display: none;
