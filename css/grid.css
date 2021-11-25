@@ -157,8 +157,8 @@ body {
   .grid-item--32__list__social__link {
     display: block;
   }
-  .grid-item--32__list__social__link:hover .cls-6 {
-    stroke:#F9F5EF;
+  .grid-item--32__list__social__link:hover svg path {
+    fill:#F9F5EF;
     transition: .3s ease all;
   }
 
