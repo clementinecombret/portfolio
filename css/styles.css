@@ -80,10 +80,6 @@ body {
     padding-inline-start: 0;
 }
 
-.header--horizontal .header__nav__link__text {
-    display: none;
-}
-
 .header__nav__link {
     display: flex;
     text-decoration: none;
@@ -104,11 +100,24 @@ body {
     color: #F96F12;
     font-family: "Krona";
     font-size: 14px;
-
+    display: none;
 }
 
 .header--horizontal--l {
     border-bottom: 2px solid #F2C2D8;
+}
+
+.header--illus {
+    background-color: transparent;
+    position: absolute;
+    z-index: 2;
+}
+
+.header--illus .header__link-images__logo {
+    display: block;
+    opacity: 1;
+    height: auto;
+    width: 50px;
 }
 
 @media (min-width: 720px) {
@@ -147,6 +156,9 @@ body {
         justify-content: center;
         align-items: center;
     }
+    .header__nav__link__text {
+        display: block;
+    }
     .header--vertical:hover {
         transition: all .3s ease;
     }
@@ -173,7 +185,7 @@ body {
     .header--horizontal .header__nav__link__text:hover {
         color: red;
     }
-    .homepage .illustrations2 {
+    .homepage .section-home {
         width: calc(100vw - 96px);
         margin-left: 96px;
     }
@@ -306,20 +318,6 @@ body {
     padding-top: 50px;
 }
 
-.hero-illustrations-left
-{
-    height: 25%;
-    width: 25%;
-    margin-left: 80px;
-
-}
-
-.hero-illustrations-left > img
-{
-    position: relative;
-    max-width: 35%;
-    margin-top: 50px;
-}
 
 .hero-illustrations-right
 {
@@ -341,7 +339,7 @@ body {
     padding-right: 5vw;
 }
 
-.illustrations2
+.section-home
 {
     height: auto;
     width: 100%;
@@ -349,7 +347,7 @@ body {
     flex-direction: column;
 }
 
-.illustrations2 a h1, .illustrations2 a h2 {
+.section-home a h1, .section-home a h2 {
     position: absolute;
     text-align: center;
     top: 50%;
@@ -362,15 +360,15 @@ body {
     font-size: 7.5vw;
     text-shadow: 2px 2px 16px rgba(0,0,0,0.75);
 }
-.illustrations2 a h1 {
+.section-home a h1 {
     color: white;
 }
 
-.illustrations2 a h2 {
+.section-home a h2 {
     color: #F96F12;
 }
 
-.illustration2_left, .illustration2_right 
+.section-home__left, .section-home__right 
 {
     display: flex;
     position: relative;
@@ -379,7 +377,7 @@ body {
     overflow: hidden;
 }
 
-.illustration2_left img, .illustration2_right img {
+.section-home__left img, .section-home__right img {
     display: block;
     min-height: 100vh;
     height: auto;
@@ -389,22 +387,22 @@ body {
 }
 
 @media (min-width: 720px) {
-    .illustrations2 {
+    .section-home {
         flex-direction:row;
     }
-    .illustration2_left, .illustration2_right 
+    .section-home__left, .section-home__right 
     {
         height: 100vh;
         width: 50%;
     }
-    .illustrations2 a h1, .illustrations2 a h2 {
+    .section-home a h1, .section-home a h2 {
         top: auto;
         bottom: 16vh;
         transform: translateX(-50%) translateY(50%);
         font-size: 3.5vw;
         text-shadow: none;
     }
-    .illustration2_left img, .illustration2_right img {
+    .section-home__left img, .section-home__right img {
         transition: all .3s ease;
         min-height: 100vh;
         height: auto;
@@ -412,7 +410,7 @@ body {
         width: auto;
     }
     
-    .illustration2_left:hover img, .illustration2_right:hover img {
+    .section-home__left:hover img, .section-home__right:hover img {
         opacity: .5;
         transform: scale(1.1);
         transition: all .3s ease;
