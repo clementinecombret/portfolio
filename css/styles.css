@@ -290,54 +290,7 @@ body {
     padding-left: 75px;
 }
 
- /******** ILLUSTRATIONS ********/
-.hero-illustrations
-{
-    width: 100%;
-    height: 100vh;
-    background-color: #FFFAEE;
-
-}
-
-.hero-illustrations-center
-{
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-.hero-illustrations-center > img
-{
-    max-width: 50%;
-    margin: 0 auto;
-    display: block;
-    padding-top: 50px;
-}
-
-
-.hero-illustrations-right
-{
-    position: absolute;
-    height: 20%;
-    width: 25vw;
-    bottom: 50px;
-    right: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.hero-illustrations-right > img
-{
-    display: block;
-    max-width: 40px;
-    padding-bottom: 15px;
-    padding-right: 5vw;
-}
+ /******** HOME ********/
 
 .section-home
 {
@@ -417,60 +370,50 @@ body {
     }
 }
 
-.illustrations3
+ /******** ILLUSTRATIONS ********/
+.hero-illustrations
 {
-    height: auto;
     width: 100%;
+    height: 100vh;
+    background-color: #FFFAEE;    
     display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
-.illustration3_left
+.hero-illustrations img
 {
-    position: relative;
-    margin-left: auto;
-    height: 34%;
-    width: 34%;
-}
-
-.illustration3_left > img
-{
-    position: relative;
+    object-fit: cover;
+    max-height: 100vh;
     max-width: 100%;
+}
+
+.illustrations__side {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.illustrations__side img {
+    width: 100vw;
+    height: auto;
     display: block;
 }
 
-.illustration3_milieu
-{
-    position: relative;
-    margin-left: auto;
-    display: block;
-    height: 34%;
-    width: 34%;
+@media (min-width: 720px) {
+    .illustrations__side {
+        flex-direction: row;
+    }
+    .illustrations__side--half img {
+        width: 50vw;
+    }
+    .illustrations__side--third img {
+        width: 33.33333vw;
+    }
 }
 
-.illustration3_milieu > img
-{
-    position: relative;
-    max-width: 100%;
-    display: block;
- 
-}
 
-.illustration3_right
-{
-    position: relative;
-    margin-left: auto;
-    display: block;
-    height: 34%;
-    width: 34%;
-}
-
-.illustration3_right > img
-{
-    position: relative;
-    max-width: 100%;
-    display: block;
-}
 
 
 .motion
@@ -482,8 +425,6 @@ body {
 
 .motion > video
 {
-    position: relative;
-    margin-left: auto;
     display: block;
     height: 100%;
     width: 100%;
