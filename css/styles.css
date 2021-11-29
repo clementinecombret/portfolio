@@ -413,9 +413,6 @@ body {
     }
 }
 
-
-
-
 .motion
 {
     height: auto;
@@ -448,3 +445,16 @@ body {
     max-width: 786px;
     width: 35vw; 
  }
+
+ /******** ABOUT ********/
+ .about .title--big {
+    font-family: "Krona";
+    text-transform: uppercase;
+    font-size: 7.5vw;
+ }
+
+ @media (min-width: 720px) {
+    .about .title--big {
+        font-size: 60px;
+    }
+}
