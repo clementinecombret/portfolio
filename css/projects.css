@@ -117,6 +117,12 @@
 .project__container__img__link {
     text-align: center;
     margin-bottom: 3%!important;
+    transition: all .3s ease;
+}
+
+.project__container__img__link:hover {
+    color: red;
+    transition: all .3s ease;
 }
 
 .project__container__infos__left__description strong,
@@ -192,4 +198,8 @@
 .footer--project .grid-item--32__list {
     padding: 32px 16px;
     width: calc(100% - 32px);
+}
+
+.width--100 {
+    width: 100%;
 }
