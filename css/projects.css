@@ -104,13 +104,19 @@
 }
 
 .project__container__infos__left__description,
-.project__container__img__description {
+.project__container__img__description,
+.project__container__img__link {
     color: #F96F12;
     font-family: "Coolvetica", sans-serif;
     font-size: 21px;
     font-weight: 300;
     line-height: 1.5;
     letter-spacing: 0.75px;
+}
+
+.project__container__img__link {
+    text-align: center;
+    margin-bottom: 3%!important;
 }
 
 .project__container__infos__left__description strong,
