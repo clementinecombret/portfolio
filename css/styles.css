@@ -4,10 +4,7 @@
 - faire état de la souris au hover
 - souris pixelisé sur 27pouces
 - gérer le responsive qui n'est pas détecté par les téléphones
-- mettre les bons liens pour les pages projets
-- mettre les bonnes images pour les pages projets
 - tester toutes les pages sur mobile pour être sur qu'il n'y ai pas d'autres cas de scroll horizontal
-- mettre un favicon
 *****/
 * {
     -webkit-font-smoothing: antialiased;
