@@ -103,7 +103,8 @@
     margin: 0 0 32px 0;
 }
 
-.project__container__infos__left__description {
+.project__container__infos__left__description,
+.project__container__img__description {
     color: #F96F12;
     font-family: "Coolvetica", sans-serif;
     font-size: 21px;
@@ -112,7 +113,8 @@
     letter-spacing: 0.75px;
 }
 
-.project__container__infos__left__description strong {
+.project__container__infos__left__description strong,
+.project__container__img__description strong {
     letter-spacing: 1.25px;
 }
 
@@ -140,6 +142,12 @@
 
 }
 
+.project__container__img img {
+    margin-bottom: 3%!important;
+}
+
+
+
 .project__container__img .btn--circle-chevron {
     flex-direction: column;
 }
@@ -156,6 +164,10 @@
 }
 
 @media (min-width: 1200px) {
+    .project__container__img__container--txt-img {
+        display: flex;
+        align-items: center;
+    }
     .project__container__img__list-img__img:first-child {
         margin-top: 0;
     }
