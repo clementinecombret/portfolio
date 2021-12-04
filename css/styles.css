@@ -1,13 +1,8 @@
 /***** TO DO 
 - regarder pourquoi la home scroll horizontalement en mobile
 - faire les animations hover des liens de menu
-- faire état de la souris au hover
-- souris pixelisé sur 27pouces
 - gérer le responsive qui n'est pas détecté par les téléphones
-- mettre les bons liens pour les pages projets
-- mettre les bonnes images pour les pages projets
 - tester toutes les pages sur mobile pour être sur qu'il n'y ai pas d'autres cas de scroll horizontal
-- mettre un favicon
 *****/
 * {
     -webkit-font-smoothing: antialiased;
@@ -20,7 +15,11 @@ html {
 
 body {
     background-color:#F9F5EF;
-    cursor: url(../images/icone--cursor--square@1x.png), auto;
+    cursor: url(../images/icone--clementine--cursor.png), auto;
+}
+
+body a:hover {
+    cursor: url(../images/icone--clementine--cursor--hover.png), auto;
 }
 
 .homepage {
