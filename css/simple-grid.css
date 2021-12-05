@@ -172,3 +172,7 @@ body {
     display: block;
   }
 }
+
+.clear--both {
+  clear: both;
+}
