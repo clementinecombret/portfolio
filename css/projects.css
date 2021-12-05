@@ -3,7 +3,6 @@
 .hero {
     width: 100%;
     height: calc(100vh - 84px);
-    background-color: red;
     position: relative;
     display: flex;
     margin-bottom: 70px;
