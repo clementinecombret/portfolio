@@ -475,17 +475,28 @@ body a:hover {
     position: absolute;
  }
  .patterns__circle--donnut {
-    top:-50%;
+    top:-10%;
     left: 25%;
-    max-width: 630px;
     width: 30vw;
  }
 
+ @media (min-width: 1200px) {
+    .patterns__circle--donnut {
+        top:-30%;
+     }
+}
+
  .patterns__square--donnut {
-    top:15%;
+    top:10%;
     right: -10%;
-    max-width: 786px;
     width: 35vw; 
+ }
+
+ .patterns__circle--full {
+    width: 30vw;
+    left: -25%;
+    top: 40%;
+    transform: translateY(-50%);
  }
 
  /******** ABOUT ********/

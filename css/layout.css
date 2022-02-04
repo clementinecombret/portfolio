@@ -1,5 +1,6 @@
-.about {
+.about .container {
     position: relative;
+    padding-bottom: 5vw;
 }
 
 .about .container {
