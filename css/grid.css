@@ -3,18 +3,16 @@ body {
     padding:0;
   }
   .grid-container {
+    overflow: hidden;
     display:grid;
-    grid-template-columns: calc(20% - 1.6px) calc(20% - 1.6px) calc(20% - 1.6px) calc(20% - 1.6px) calc(20% - 1.6px);
-    grid-gap: 2px;
-    background-color:#F2C2D8;
+    grid-template-columns: calc(20%) calc(20%) calc(20%) calc(20%) calc(20%);
   }
   
   .grid-item {
-    color:blue;
-    background-color:#F9F5EF;
     min-height: 20vw;
     overflow:hidden;
     display:flex;
+    border: 1px solid #F2C2D8;
   }
   .grid-item__link {
       display: flex;

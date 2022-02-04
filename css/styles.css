@@ -146,7 +146,7 @@ body a:hover {
 }
 
 .header--horizontal--l {
-    border-bottom: 2px solid #F2C2D8;
+    border-bottom: 1px solid #F2C2D8;
 }
 
 .header--illus {
@@ -474,25 +474,87 @@ body a:hover {
     z-index:-1;
     position: absolute;
  }
- .patterns__circle--donnut {
+
+.artistic-direction .patterns__circle--donnut--1 {
+    top: -200px;
+    left: 20%;
+    width: 400px;
+    display: none;
+    z-index: 0;
+}
+
+.artistic-direction .patterns__circle--full--1 {
+    top: 25px;
+    left: -150px;
+    width: 200px;
+    display: none;
+    z-index: 0;
+}
+
+@media (min-width: 1200px) {
+    .artistic-direction .patterns__circle--donnut--1,
+    .artistic-direction .patterns__circle--full--1 {
+        display: block;
+    }
+}
+
+.grid-item--6, .grid-item--13, .grid-item--16, .grid-item--25 {
+    position: relative;
+    overflow: visible!important;
+}
+
+.patterns__circle--full--2 {
+    position: absolute;
+    width: 20vw;
+    left: 60%;
+    z-index: -1;
+}
+
+.patterns__circle--donnut--2 {
+    position: absolute;
+    top: 10vw;
+    height: 50vw;
+    left: -10vw;
+    z-index: -1;
+}
+
+.patterns__square--donnut--1 {
+    position: absolute;
+    top: -50px;
+    width: 35vw;
+    left: -75px;
+    transform: rotate(25deg);
+    z-index: -1;
+}
+
+.patterns__circle--full--3 {
+    position: absolute;
+    width: 25vw;
+    top: 20%;
+    left: -40%;
+    z-index: -1;
+}
+
+ /*** About page ***/
+ .about .patterns__circle--donnut {
     top:-10%;
     left: 25%;
     width: 30vw;
  }
 
  @media (min-width: 1200px) {
-    .patterns__circle--donnut {
+    .about .patterns__circle--donnut {
         top:-30%;
      }
 }
 
- .patterns__square--donnut {
+.about .patterns__square--donnut {
     top:10%;
     right: -10%;
     width: 35vw; 
  }
 
- .patterns__circle--full {
+.about .patterns__circle--full {
     width: 30vw;
     left: -25%;
     top: 40%;

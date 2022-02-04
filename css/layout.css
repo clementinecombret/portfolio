@@ -1,3 +1,11 @@
+.artistic-direction {
+    background-color:#F9F5EF;
+}
+
+.artistic-direction header {
+    position: relative;
+}
+
 .about .container {
     position: relative;
     padding-bottom: 5vw;
