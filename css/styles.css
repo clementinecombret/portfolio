@@ -1,9 +1,6 @@
 /***** TO DO 
 - regarder pourquoi la home scroll horizontalement en mobile
-- gérer le responsive qui n'est pas détecté par les téléphones
 - tester toutes les pages sur mobile pour être sur qu'il n'y ai pas d'autres cas de scroll horizontal
-- Ajouter les petites formes sur la page projet
-- Ajouter les petites formes sur les autres pages
 *****/
 * {
     -webkit-font-smoothing: antialiased;
@@ -475,6 +472,11 @@ body a:hover {
     position: absolute;
  }
 
+.artistic-direction {
+    position: relative;
+    height: auto;
+}
+
 .artistic-direction .patterns__circle--donnut--1 {
     top: -200px;
     left: 20%;
@@ -533,6 +535,145 @@ body a:hover {
     top: 20%;
     left: -40%;
     z-index: -1;
+}
+
+.artistic-direction .patterns {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.artistic-direction .patterns--colored {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    overflow: hidden;
+}
+.artistic-direction .patterns--colored__donnut--half--1 {
+    position: absolute;
+    width: 15vw;
+    top: -15vw;
+    left: 48vw;
+    z-index: 3;
+    transform: rotate(250deg);
+}
+
+.patterns--colored__circle-quart--1 {
+    position: absolute;
+    width: 15vw;
+    top: 30vw;
+    left: 90vw;
+    z-index: 3;
+    transform: rotate(210deg);
+}
+
+.artistic-direction .patterns--colored__square-donnut--1 {
+    position: absolute;
+    width: 15vw;
+    top: 39vw;
+    left: 23vw;
+    z-index: 3;
+    transform: rotate(90deg);
+}
+
+.artistic-direction .patterns--colored__circle--1 {
+    position: absolute;
+    width: 15vw;
+    top: 91vw;
+    left: 69vw;
+    z-index: 3;
+}
+
+.artistic-direction .patterns--colored__donnut--half--2 {
+    position: absolute;
+    width: 15vw;
+    top: 103vw;
+    left: 46vw;
+    z-index: 3;
+    transform: rotate(90deg);
+}
+
+.artistic-direction .patterns--colored__circle--2 {
+    position: absolute;
+    width: 10vw;
+    top: 142vw;
+    left: 14vw;
+    z-index: 3;
+}
+
+.patterns--colored__circle-quart--2 {
+    position: absolute;
+    width: 20vw;
+    top: 175vw;
+    left: 65vw;
+    z-index: 3;
+    transform: rotate(135deg);
+}
+
+.artistic-direction .patterns--colored__donnut--half--3 {
+    position: absolute;
+    width: 25vw;
+    top: 172vw;
+    left: -8vw;
+    z-index: 3;
+    transform: rotate(150deg);
+}
+
+.artistic-direction .patterns--colored__circle--3 {
+    position: absolute;
+    width: 25vw;
+    top: 240vw;
+    left: -9vw;
+    z-index: 3;
+}
+
+.artistic-direction .patterns--colored__square-donnut--2 {
+    position: absolute;
+    width: 35vw;
+    top: 225vw;
+    left: 81vw;
+    z-index: 3;
+    transform: rotate(90deg);
+}
+
+@media (min-width: 720px) {
+    .artistic-direction .patterns--colored__donnut--half--1 {
+        top: 10vw;
+    }
+    .patterns--colored__circle-quart--1 {
+        top: 50vw;
+    }
+    .artistic-direction .patterns--colored__square-donnut--1 {
+        top: 64vw;
+    }
+    .artistic-direction .patterns--colored__circle--1 {
+        top: 102vw;
+    }
+    .artistic-direction .patterns--colored__donnut--half--2 {
+        top: 125vw;
+    }
+    .artistic-direction .patterns--colored__circle--2 {
+        top: 153vw;
+    }
+    .patterns--colored__circle-quart--2 {
+        top: 195vw;
+    }
+    .artistic-direction .patterns--colored__donnut--half--3 {
+        top: 190vw;
+    }
+    .artistic-direction .patterns--colored__circle--3 {
+        width: 15vw;
+        top: 243vw;
+        left: 11vw;
+    }
+    .artistic-direction .patterns--colored__square-donnut--2 {
+        width: 15vw;
+        left: 73vw;
+        top: 225vw;
+    }
 }
 
  /*** About page ***/
