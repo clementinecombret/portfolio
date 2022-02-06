@@ -4,6 +4,7 @@ body {
   }
   .grid-container {
     overflow: hidden;
+    position: relative;
     display:grid;
     grid-template-columns: calc(20%) calc(20%) calc(20%) calc(20%) calc(20%);
   }

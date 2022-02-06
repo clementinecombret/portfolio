@@ -537,25 +537,10 @@ body a:hover {
     z-index: -1;
 }
 
-.artistic-direction .patterns {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-}
-
-.artistic-direction .patterns--colored {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-    overflow: hidden;
-}
 .artistic-direction .patterns--colored__donnut--half--1 {
     position: absolute;
     width: 15vw;
-    top: -15vw;
+    top: 7vw;
     left: 48vw;
     z-index: 3;
     transform: rotate(250deg);
@@ -564,7 +549,7 @@ body a:hover {
 .patterns--colored__circle-quart--1 {
     position: absolute;
     width: 15vw;
-    top: 30vw;
+    top: 35vw;
     left: 90vw;
     z-index: 3;
     transform: rotate(210deg);
@@ -573,7 +558,7 @@ body a:hover {
 .artistic-direction .patterns--colored__square-donnut--1 {
     position: absolute;
     width: 15vw;
-    top: 39vw;
+    top: 54vw;
     left: 23vw;
     z-index: 3;
     transform: rotate(90deg);
@@ -582,7 +567,7 @@ body a:hover {
 .artistic-direction .patterns--colored__circle--1 {
     position: absolute;
     width: 15vw;
-    top: 91vw;
+    top: 84vw;
     left: 69vw;
     z-index: 3;
 }
@@ -590,7 +575,7 @@ body a:hover {
 .artistic-direction .patterns--colored__donnut--half--2 {
     position: absolute;
     width: 15vw;
-    top: 103vw;
+    top: 113vw;
     left: 46vw;
     z-index: 3;
     transform: rotate(90deg);
@@ -599,7 +584,7 @@ body a:hover {
 .artistic-direction .patterns--colored__circle--2 {
     position: absolute;
     width: 10vw;
-    top: 142vw;
+    top: 137vw;
     left: 14vw;
     z-index: 3;
 }
@@ -644,35 +629,35 @@ body a:hover {
         top: 10vw;
     }
     .patterns--colored__circle-quart--1 {
-        top: 50vw;
+        top: 35vw;
     }
     .artistic-direction .patterns--colored__square-donnut--1 {
-        top: 64vw;
+        top: 52vw;
     }
     .artistic-direction .patterns--colored__circle--1 {
-        top: 102vw;
+        top: 84vw;
     }
     .artistic-direction .patterns--colored__donnut--half--2 {
-        top: 125vw;
+        top: 112vw;
     }
     .artistic-direction .patterns--colored__circle--2 {
-        top: 153vw;
+        top: 136vw;
     }
     .patterns--colored__circle-quart--2 {
-        top: 195vw;
+        top: 175vw;
     }
     .artistic-direction .patterns--colored__donnut--half--3 {
-        top: 190vw;
+        top: 175vw;
     }
     .artistic-direction .patterns--colored__circle--3 {
         width: 15vw;
-        top: 243vw;
+        top: 224vw;
         left: 11vw;
     }
     .artistic-direction .patterns--colored__square-donnut--2 {
         width: 15vw;
         left: 73vw;
-        top: 225vw;
+        top: 205vw;
     }
 }
 
