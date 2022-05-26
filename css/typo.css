@@ -1,12 +1,12 @@
-@font-face { font-family: Krona; src: url('../fonts/KronaOne-Regular.ttf'); } 
-/* TO DO 
+@font-face { font-family: Krona; src: url('../fonts/KronaOne-Regular.ttf'); }
+/* TO DO
 - Rendre les titres responsives
 - Voir s'il n'y a pas un moyen d'améliorer le rendu d'espacement entre les lettre (delta entre les maquettes et le dev)
 */
 .title--big {
     font-family: "Krona", sans-serif;
     color: #F96F12;
-    font-size: 60px;
+    font-size: 43px;
     letter-spacing: 0.03em;
     margin-block-start: 0;
     margin-bottom: 120px;
@@ -14,7 +14,7 @@
 
 .title--medium {
     font-family: "Krona";
-    font-size: 50px;
+    font-size: 40px;
     text-align: left;
     color: #f96f12;
     margin-block-start: 0;
