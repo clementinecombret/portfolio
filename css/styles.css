@@ -1,4 +1,4 @@
-/***** TO DO 
+/***** TO DO
 - regarder pourquoi la home scroll horizontalement en mobile
 - tester toutes les pages sur mobile pour être sur qu'il n'y ai pas d'autres cas de scroll horizontal
 *****/
@@ -123,7 +123,7 @@ body a:hover {
     display: flex;
     text-decoration: none;
     width: 24px;
-    height: 24px; 
+    height: 24px;
 }
 
 .header__nav__link__svg {
@@ -134,7 +134,7 @@ body a:hover {
 
 .header__nav__link__text {
     transition: all .3s ease;
-    opacity: 0;    
+    opacity: 0;
     width: 0;
     color: #F96F12;
     font-family: "Krona";
@@ -235,7 +235,7 @@ body a:hover {
     }
     .header--horizontal .header__link-images__logo {
         transition: all .3s ease;
-        width: 70px;
+        width: 100px;
         height: auto;
         opacity: 1;
     }
@@ -289,7 +289,7 @@ body a:hover {
     background-color: #F96F12;
     margin-right: 14px;
 }
-.btn--circle-chevron__chevron { 
+.btn--circle-chevron__chevron {
     transform: rotate(90deg);
 }
 
@@ -299,10 +299,10 @@ body a:hover {
 }
 
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
-    40% {transform: translateY(-20px);} 
-    60% {transform: translateY(-10px);} 
- } 
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-20px);}
+    60% {transform: translateY(-10px);}
+ }
 
  .landing {
      width: 100%;
@@ -360,7 +360,7 @@ body a:hover {
     color: #F96F12;
 }
 
-.section-home__left, .section-home__right 
+.section-home__left, .section-home__right
 {
     display: flex;
     position: relative;
@@ -382,7 +382,7 @@ body a:hover {
     .section-home {
         flex-direction:row;
     }
-    .section-home__left, .section-home__right 
+    .section-home__left, .section-home__right
     {
         height: 100vh;
         width: 50%;
@@ -401,7 +401,7 @@ body a:hover {
         min-width: 50vw;
         width: auto;
     }
-    
+
     .section-home__left:hover img, .section-home__right:hover img {
         opacity: .5;
         transform: scale(1.1);
@@ -414,7 +414,7 @@ body a:hover {
 {
     width: 100%;
     height: 100vh;
-    background-color: #FFFAEE;    
+    background-color: #FFFAEE;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -514,17 +514,17 @@ body a:hover {
 
 .patterns__circle--donnut--2 {
     position: absolute;
-    top: 10vw;
-    height: 50vw;
-    left: -10vw;
+    top: 120vw;
+    height: 40vw;
+    left: -80vw;
     z-index: -1;
 }
 
 .patterns__square--donnut--1 {
     position: absolute;
-    top: -50px;
+    top: -5px;
     width: 35vw;
-    left: -75px;
+    left: -70px;
     transform: rotate(25deg);
     z-index: -1;
 }
@@ -557,7 +557,7 @@ body a:hover {
 
 .artistic-direction .patterns--colored__square-donnut--1 {
     position: absolute;
-    width: 15vw;
+    width: 18vw;
     top: 54vw;
     left: 23vw;
     z-index: 3;
@@ -568,7 +568,7 @@ body a:hover {
     position: absolute;
     width: 15vw;
     top: 84vw;
-    left: 69vw;
+    left: 90vw;
     z-index: 3;
 }
 
@@ -576,7 +576,7 @@ body a:hover {
     position: absolute;
     width: 15vw;
     top: 113vw;
-    left: 46vw;
+    left: 53vw;
     z-index: 3;
     transform: rotate(90deg);
 }
@@ -591,7 +591,7 @@ body a:hover {
 
 .patterns--colored__circle-quart--2 {
     position: absolute;
-    width: 20vw;
+    width: 17vw;
     top: 175vw;
     left: 65vw;
     z-index: 3;
@@ -600,7 +600,7 @@ body a:hover {
 
 .artistic-direction .patterns--colored__donnut--half--3 {
     position: absolute;
-    width: 25vw;
+    width: 20vw;
     top: 172vw;
     left: -8vw;
     z-index: 3;
@@ -632,10 +632,7 @@ body a:hover {
         top: 35vw;
     }
     .artistic-direction .patterns--colored__square-donnut--1 {
-        top: 52vw;
-    }
-    .artistic-direction .patterns--colored__circle--1 {
-        top: 84vw;
+        top: 50vw;
     }
     .artistic-direction .patterns--colored__donnut--half--2 {
         top: 112vw;
@@ -644,20 +641,20 @@ body a:hover {
         top: 136vw;
     }
     .patterns--colored__circle-quart--2 {
-        top: 175vw;
+        top: 160vw;
     }
     .artistic-direction .patterns--colored__donnut--half--3 {
         top: 175vw;
     }
     .artistic-direction .patterns--colored__circle--3 {
-        width: 15vw;
-        top: 224vw;
+        width: 12vw;
+        top: 223vw;
         left: 11vw;
     }
     .artistic-direction .patterns--colored__square-donnut--2 {
-        width: 15vw;
-        left: 73vw;
-        top: 205vw;
+        width: 18vw;
+        left: 51vw;
+        top: 192vw;
     }
 }
 
@@ -677,7 +674,7 @@ body a:hover {
 .about .patterns__square--donnut {
     top:10%;
     right: -10%;
-    width: 35vw; 
+    width: 35vw;
  }
 
 .about .patterns__circle--full {
@@ -696,6 +693,74 @@ body a:hover {
 
  @media (min-width: 720px) {
     .about .title--big {
-        font-size: 60px;
+        font-size: 50px;
     }
+}
+
+.bouton--CV {
+  font-family: "Krona";
+  font-size: 20px;
+  color: #f96f12;
+  text-decoration: none;
+}
+
+ /******** NAVIGATION PAGES ********/
+ .navigation__side {
+     width: 100vw;
+     display: flex;
+     flex-direction: column;
+ }
+
+ .navigation__side--right,
+ .navigation__side--left {
+   overflow: hidden;
+   position: relative;
+   width: 100vw;
+   height: 200px;
+ }
+
+ .navigation__side--right:hover .navigation__side--right__img--effect,
+ .navigation__side--left:hover .navigation__side--left__img--effect{
+   opacity: 0;
+   transition: .3s ease all;
+ }
+
+ .navigation__side--half img {
+     width: 100%;
+     height: auto;
+     display: block;
+     position: absolute;
+     left: 50%;
+     top: 50%;
+     transform: translateX(-50%) translateY(-50%);
+     transition: .3s ease all;
+ }
+
+ @media (min-width: 720px) {
+     .navigation__side {
+         flex-direction: row;
+     }
+     .navigation__side--right,
+     .navigation__side--left {
+       height: 15vw;
+       max-height: 300px;
+     }
+ }
+
+
+ /******** UTILITY CLASSES ********/
+.order--2{
+  order:2;
+}
+
+.margin-bot--m {
+  margin-bottom: 32px!important;
+}
+
+.margin-bot--l {
+  margin-bottom: 70px!important;
+}
+
+.margin-bot--xl {
+  margin-bottom: 125px!important;
 }
