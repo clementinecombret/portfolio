@@ -122,7 +122,7 @@
   letter-spacing: 1px;
   font-weight: bold;
 }
-}
+
 
 .project__container__img__link {
     text-align: center;
@@ -131,7 +131,7 @@
 }
 
 .project__container__img__link:hover {
-    color: red;
+    /* color: red; */
     transition: all .3s ease;
 }
 
