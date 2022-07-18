@@ -136,7 +136,7 @@ body {
   }
 
   .grid-item--32__list__email {
-    font-size: clamp(32px, 4.5vw, 60px);
+    font-size: clamp(16px, 4.5vw, 60px);
     font-family: "Krona", sans-serif;
     margin-bottom: 5vw;
   }
@@ -163,7 +163,7 @@ body {
 
   .grid-item--32__list__text {
     margin-bottom: 3vw;
-    font-size: clamp(24px, 3.5vw, 40px);
+    font-size: clamp(16px, 3.5vw, 40px);
     font-family: "Coolvetica";
     font-weight: 400;
     color: #F9F5EF;
