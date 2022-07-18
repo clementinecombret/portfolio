@@ -344,13 +344,13 @@ body a:hover {
     text-align: center;
     top: auto;
     left: 50%;
-    bottom : 20vh;
+    bottom : 16vh;
     z-index: 2;
     transform: translateX(-50%) translateY(50%);
     margin: 0;
     font-family: "Krona";
     text-transform: uppercase;
-    font-size: 7.5vw;
+    font-size: 32px;
 }
 .section-home a h1 {
     color: white;
@@ -386,6 +386,9 @@ body a:hover {
     {
         height: 100vh;
         width: 50%;
+    }
+    .section-home a h1, .section-home a h2 {
+        font-size: clamp(32px, 3.5vw, 50px);
     }
     .section-home__left img, .section-home__right img {
         transition: all .3s ease;
