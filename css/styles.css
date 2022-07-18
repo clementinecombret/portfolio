@@ -342,15 +342,15 @@ body a:hover {
 .section-home a h1, .section-home a h2 {
     position: absolute;
     text-align: center;
-    top: 50%;
+    top: auto;
     left: 50%;
+    bottom : 20vh;
     z-index: 2;
-    transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(50%);
     margin: 0;
     font-family: "Krona";
     text-transform: uppercase;
     font-size: 7.5vw;
-    text-shadow: 2px 2px 16px rgba(0,0,0,0.75);
 }
 .section-home a h1 {
     color: white;
@@ -386,13 +386,6 @@ body a:hover {
     {
         height: 100vh;
         width: 50%;
-    }
-    .section-home a h1, .section-home a h2 {
-        top: auto;
-        bottom: 16vh;
-        transform: translateX(-50%) translateY(50%);
-        font-size: 3.5vw;
-        text-shadow: none;
     }
     .section-home__left img, .section-home__right img {
         transition: all .3s ease;
