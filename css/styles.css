@@ -344,7 +344,7 @@ body a:hover {
     text-align: center;
     top: auto;
     left: 50%;
-    bottom : 20vh;
+    bottom : 16vh;
     z-index: 2;
     transform: translateX(-50%) translateY(50%);
     margin: 0;
